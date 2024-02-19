@@ -1,6 +1,6 @@
-from llama_index.postprocessor import SimilarityPostprocessor
-from llama_index import VectorStoreIndex
-from llama_index.readers import SimpleDirectoryReader
+from llama_index.core.postprocessor import SimilarityPostprocessor
+from llama_index.core import VectorStoreIndex
+from llama_index.core import SimpleDirectoryReader
 
 reader = SimpleDirectoryReader('files/other')
 documents = reader.load_data()

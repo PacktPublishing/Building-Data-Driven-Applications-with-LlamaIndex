@@ -1,5 +1,6 @@
-from llama_index.agent import AgentRunner, OpenAIAgentWorker
-from llama_hub.tools.database import DatabaseToolSpec
+from llama_index.core.agent import AgentRunner
+from llama_index.agent.openai import OpenAIAgentWorker
+from llama_index.tools.database import DatabaseToolSpec
 
 db_tools = DatabaseToolSpec(uri="sqlite:///files//database//employees.db")
 tools = db_tools.to_tool_list()

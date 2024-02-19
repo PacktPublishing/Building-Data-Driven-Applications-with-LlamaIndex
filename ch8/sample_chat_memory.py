@@ -1,6 +1,6 @@
-from llama_index.storage.chat_store import SimpleChatStore
-from llama_index.chat_engine import SimpleChatEngine
-from llama_index.memory import ChatMemoryBuffer
+from llama_index.core.storage.chat_store import SimpleChatStore
+from llama_index.core.chat_engine import SimpleChatEngine
+from llama_index.core.memory import ChatMemoryBuffer
 
 try:
     chat_store = SimpleChatStore.from_persist_path(

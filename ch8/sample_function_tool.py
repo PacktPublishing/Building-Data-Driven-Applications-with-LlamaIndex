@@ -1,4 +1,4 @@
-from llama_index.tools import FunctionTool
+from llama_index.core.tools import FunctionTool
 
 def calculate_average(*values):
     """

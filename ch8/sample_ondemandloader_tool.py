@@ -1,8 +1,7 @@
-from llama_index import download_loader
-from llama_index.agent import OpenAIAgent
-from llama_index.tools.ondemand_loader_tool import OnDemandLoaderTool
+from llama_index.agent.openai import OpenAIAgent
+from llama_index.core.tools.ondemand_loader_tool import OnDemandLoaderTool
 
-WikipediaReader = download_loader("WikipediaReader")
+from llama_index.readers.wikipedia import WikipediaReader
 
 tool = OnDemandLoaderTool.from_defaults(
  WikipediaReader(),

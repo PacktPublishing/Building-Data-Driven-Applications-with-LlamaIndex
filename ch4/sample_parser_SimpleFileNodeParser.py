@@ -1,12 +1,11 @@
-from llama_index.text_splitter import SimpleFileNodeParser
-from llama_index.readers.file.flat_reader import FlatReader
+from llama_index.readers.file import FlatReader
 from pathlib import Path
 
 reader = FlatReader()
 document = reader.load_data(Path("files/sample_document1.txt"))
 
-parser = SimpleFileNodeParser()
-nodes = parser.get_nodes_from_documents(documents)
+print(f"Metadata: {document[0].metadata}")
+print(f"Text: {document[0].text}")
 
-for node in nodes:
-    print(f"Metadata {node.metadata} \nText {node.text}")
+
+# am schimbat putin logica . am eliminat parserul si am afisat document metadata si text

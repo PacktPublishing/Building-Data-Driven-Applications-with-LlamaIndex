@@ -1,8 +1,8 @@
-from llama_index.tools.query_engine import QueryEngineTool
-from llama_index.query_engine.router_query_engine import RouterQueryEngine
-from llama_index.selectors.pydantic_selectors import PydanticMultiSelector
-from llama_index import SummaryIndex, SimpleDirectoryReader
-from llama_index.extractors import TitleExtractor  
+from llama_index.core.tools import QueryEngineTool
+from llama_index.core.query_engine import RouterQueryEngine
+from llama_index.core.selectors import PydanticMultiSelector
+from llama_index.core import SummaryIndex, SimpleDirectoryReader
+from llama_index.core.extractors import TitleExtractor
 
 documents = SimpleDirectoryReader("files").load_data()
 

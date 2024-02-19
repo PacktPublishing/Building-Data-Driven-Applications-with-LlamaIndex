@@ -1,5 +1,5 @@
-from llama_index.text_splitter import SentenceWindowNodeParser
-from llama_index.readers.file.flat_reader import FlatReader
+from llama_index.core.node_parser import SentenceWindowNodeParser
+from llama_index.readers.file import FlatReader
 from pathlib import Path
 
 reader = FlatReader()
@@ -13,4 +13,4 @@ parser = SentenceWindowNodeParser.from_defaults(
 nodes = parser.get_nodes_from_documents(document)
 
 for node in nodes:
-    print(f"Metadata {node.metadata} \nText {node.text}")
+    print(f"Metadata {node.metadata} \nText: {node.text}\n")

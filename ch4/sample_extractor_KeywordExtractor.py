@@ -1,6 +1,6 @@
-from llama_index.readers import SimpleDirectoryReader
-from llama_index.text_splitter import SentenceSplitter
-from llama_index.extractors import KeywordExtractor
+from llama_index.core import SimpleDirectoryReader
+from llama_index.core.node_parser import SentenceSplitter
+from llama_index.core.extractors import KeywordExtractor
 
 reader = SimpleDirectoryReader('files')
 documents = reader.load_data()

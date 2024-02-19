@@ -1,4 +1,4 @@
-from llama_index import VectorStoreIndex, SimpleDirectoryReader
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 docs = SimpleDirectoryReader(input_dir="files").load_data()
 index = VectorStoreIndex.from_documents(docs)
 chat_engine = index.as_chat_engine(

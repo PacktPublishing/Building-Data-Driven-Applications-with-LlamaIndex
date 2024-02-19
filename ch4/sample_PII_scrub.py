@@ -1,14 +1,21 @@
-from llama_index.postprocessor import  NERPIINodePostprocessor
-from llama_index.llms import HuggingFaceLLM
-from llama_index.schema import NodeWithScore, TextNode
-from llama_index import ServiceContext
+from llama_index.core.postprocessor import NERPIINodePostprocessor
+from llama_index.llms.huggingface import HuggingFaceLLM
+from llama_index.core.schema import NodeWithScore, TextNode
 
-original = """Dear Jane Doe. Your address has been recorded in our database. \
-Please confirm it is valid: 8804 Vista Serro Dr. Cabo Robles, California(CA)."""
+original = (
+    "Dear Jane Doe. Your address has been recorded in "
+    "our database. Please confirm it is valid: 8804 Vista "
+    "Serro Dr. Cabo Robles, California(CA)."
+)
 
 node = TextNode(text=original)
-service_context = ServiceContext.from_defaults()
-processor = NERPIINodePostprocessor(service_context=service_context)
-clean_nodes = processor.postprocess_nodes([NodeWithScore(node=node)])
+processor = NERPIINodePostprocessor()
+
+clean_nodes = processor.postprocess_nodes(
+    [NodeWithScore(node=node)]
+)
 
 print(clean_nodes[0].node.get_text())
+
+
+# de mentionat ca se instaleaza: pip install llama-index-llms-huggingface si ca va downloada ceva la prima rulare

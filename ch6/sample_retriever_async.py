@@ -1,6 +1,6 @@
 import asyncio
-from llama_index import KeywordTableIndex
-from llama_index.readers import SimpleDirectoryReader
+from llama_index.core import KeywordTableIndex
+from llama_index.core import SimpleDirectoryReader
 
 async def retrieve(retriever, query, label):
     response = await retriever.aretrieve(query)

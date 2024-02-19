@@ -1,11 +1,7 @@
-from llama_index.selectors.pydantic_selectors import PydanticMultiSelector
-from llama_index.retrievers import RouterRetriever
-from llama_index.tools import RetrieverTool
-from llama_index import (
-    VectorStoreIndex, 
-    SummaryIndex, 
-    SimpleDirectoryReader
-)
+from llama_index.core.selectors import PydanticMultiSelector
+from llama_index.core.retrievers import RouterRetriever
+from llama_index.core.tools import RetrieverTool
+from llama_index.core import VectorStoreIndex, SummaryIndex, SimpleDirectoryReader
 documents = SimpleDirectoryReader("files").load_data()
 
 vector_index = VectorStoreIndex.from_documents([documents[0]])
@@ -37,6 +33,7 @@ for r in response:
     print(r.text)
 
 '''
+#other possible queries
 retriever.retrieve("What can you tell me about the Ancient Rome?") 
 retriever.retrieve("Tell me all you know about dogs") 
 retriever.retrieve("Tell me abous dogs in Ancient Rome")

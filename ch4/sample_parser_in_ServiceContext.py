@@ -1,5 +1,5 @@
-from llama_index import ServiceContext, Document, VectorStoreIndex
-from llama_index.node_parser import SentenceWindowNodeParser
+from llama_index.core import Settings, Document, VectorStoreIndex
+from llama_index.core.node_parser import SentenceWindowNodeParser
 
 doc = Document(text="Sentence 1. Sentence 2. Sentence 3.")
 text_splitter = SentenceWindowNodeParser.from_defaults(
@@ -8,5 +8,6 @@ text_splitter = SentenceWindowNodeParser.from_defaults(
     original_text_metadata_key="node_text"
     )
 
-service_context = ServiceContext.from_defaults(text_splitter=text_splitter)
-index = VectorStoreIndex.from_documents([doc],service_context=service_context)
+Settings.text_splitter=text_splitter
+index = VectorStoreIndex.from_documents([doc])
+print("Successfully created the Index!")

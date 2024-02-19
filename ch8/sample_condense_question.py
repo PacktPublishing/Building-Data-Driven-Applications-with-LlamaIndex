@@ -1,6 +1,6 @@
-from llama_index import VectorStoreIndex, SimpleDirectoryReader
-from llama_index.chat_engine import CondenseQuestionChatEngine
-from llama_index.llms import ChatMessage
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+from llama_index.core.chat_engine import CondenseQuestionChatEngine
+from llama_index.core.llms import ChatMessage
 
 documents = SimpleDirectoryReader("files").load_data()
 index = VectorStoreIndex.from_documents(documents)

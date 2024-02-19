@@ -1,5 +1,7 @@
-from llama_index import download_loader 
+from llama_index.readers.wikipedia import WikipediaReader
 
-WikipediaReader = download_loader("WikipediaReader") 
 loader = WikipediaReader() 
-documents = loader.load_data(pages=['Pythagorean theorem','General relativity']) 
+documents = loader.load_data(
+    pages=['Pythagorean theorem','General relativity']
+) 
+print(f"loaded {len(documents)} documents")

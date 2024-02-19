@@ -1,7 +1,7 @@
-from llama_hub.tools.database import DatabaseToolSpec
-from llama_index.tools import FunctionTool
-from llama_index.agent import OpenAIAgent
-from llama_index.llms import OpenAI
+from llama_index.tools.database import DatabaseToolSpec
+from llama_index.core.tools import FunctionTool
+from llama_index.agent.openai import OpenAIAgent
+from llama_index.llms.openai import OpenAI
 
 def write_text_to_file(text, filename):
     """

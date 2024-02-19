@@ -1,7 +1,7 @@
-from llama_index.tools.tool_spec.load_and_search.base import LoadAndSearchToolSpec
-from llama_hub.tools.database import DatabaseToolSpec
-from llama_index.agent import OpenAIAgent
-from llama_index.llms import OpenAI
+from llama_index.core.tools.tool_spec.load_and_search.base import LoadAndSearchToolSpec
+from llama_index.tools.database import DatabaseToolSpec
+from llama_index.agent.openai import OpenAIAgent
+from llama_index.llms.openai import OpenAI
 
 db_tools = DatabaseToolSpec(uri="sqlite:///files//database//employees.db")
 tool_list = db_tools.to_tool_list()

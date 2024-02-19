@@ -1,4 +1,4 @@
-from llama_index.indices.query.query_transform import DecomposeQueryTransform
+from llama_index.core.indices.query.query_transform.base import DecomposeQueryTransform
 decompose = DecomposeQueryTransform()
 query_bundle = decompose.run(
 "Tell me about buildings in ancient Rome"

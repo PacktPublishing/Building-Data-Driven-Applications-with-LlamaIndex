@@ -1,5 +1,6 @@
-from llama_index.schema import Node, NodeWithScore 
-from llama_index import get_response_synthesizer 
+from llama_index.core.data_structs import Node
+from llama_index.core.schema import NodeWithScore
+from llama_index.core import get_response_synthesizer
 
 nodes = [ 
     Node(text="The town square clock was built in 1895"), 

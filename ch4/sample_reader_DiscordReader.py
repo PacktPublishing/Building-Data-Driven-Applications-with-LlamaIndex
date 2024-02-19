@@ -1,7 +1,8 @@
-from llama_index import download_loader
-
-DiscordReader = download_loader('DiscordReader')
+from llama_index.readers.discord import DiscordReader
 discord_token = "<YOUR_DISCORD_TOKEN>"
 channel_ids = [1234567890] 
 reader = DiscordReader(discord_token=discord_token)
 documents = reader.load_data(channel_ids=channel_ids)
+
+# de mentionat: pip install llama-index-readers-discord
+# de mentionat: pip install discord

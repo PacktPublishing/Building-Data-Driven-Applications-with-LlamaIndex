@@ -1,11 +1,7 @@
-from llama_index.retrievers import SummaryIndexEmbeddingRetriever
-from llama_index.postprocessor import SimilarityPostprocessor
-from llama_index.query_engine import RetrieverQueryEngine
-from llama_index import (
-    SummaryIndex,
-    SimpleDirectoryReader,
-    get_response_synthesizer,
-)
+from llama_index.core.retrievers import SummaryIndexEmbeddingRetriever
+from llama_index.core.postprocessor import SimilarityPostprocessor
+from llama_index.core.query_engine import RetrieverQueryEngine
+from llama_index.core import SummaryIndex, SimpleDirectoryReader, get_response_synthesizer
 
 documents = SimpleDirectoryReader("files").load_data()
 index = SummaryIndex.from_documents(documents)

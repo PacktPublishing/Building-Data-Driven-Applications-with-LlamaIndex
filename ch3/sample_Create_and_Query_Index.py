@@ -1,5 +1,6 @@
-from llama_index import SummaryIndex 
-from llama_index.schema import Document, TextNode
+from llama_index.core import SummaryIndex
+from llama_index.core import Document
+from llama_index.core.schema import TextNode
 
 nodes = [
   TextNode(text="Lionel Messi is a football player from Argentina."),
@@ -10,5 +11,7 @@ nodes = [
 index = SummaryIndex(nodes)
 
 query_engine = index.as_query_engine()
-response = query_engine.query("What is Messi's hometown?")
+response = query_engine.query(
+    "What is Messi's hometown?"
+)
 print(response)

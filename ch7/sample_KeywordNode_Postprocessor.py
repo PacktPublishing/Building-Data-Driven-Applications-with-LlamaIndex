@@ -1,17 +1,15 @@
-from llama_index.postprocessor import (
-    KeywordNodePostprocessor
-)
-from llama_index.schema import TextNode, NodeWithScore
+from llama_index.core.postprocessor import KeywordNodePostprocessor
+from llama_index.core.schema import TextNode, NodeWithScore
 
 nodes = [
     TextNode(
-        text="Entry no: 1, <SECRET>, Attack at Dawn"
+        text="Entry no: 1, <SECRET> - Attack at Dawn"
     ),
     TextNode(
-        text="Entry no: 2, <RESTRICTED>, Go to point Bravo"
+        text="Entry no: 2, <RESTRICTED> - Go to point Bravo"
     ),
     TextNode(
-        text="Entry no: 3, <PUBLIC>, text: Roses are Red"
+        text="Entry no: 3, <PUBLIC> - Roses are Red"
     ),
 ]
 
@@ -28,3 +26,5 @@ print('Remaining nodes:')
 for node_with_score in remaining_nodes:
     node = node_with_score.node
     print(f"Text: {node.text}")
+
+#de mentionat: pip install spacy

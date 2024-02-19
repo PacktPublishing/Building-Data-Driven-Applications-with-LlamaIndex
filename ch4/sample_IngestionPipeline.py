@@ -1,8 +1,8 @@
-from llama_index.readers import SimpleDirectoryReader
-from llama_index.extractors import SummaryExtractor,QuestionsAnsweredExtractor
-from llama_index.text_splitter import TokenTextSplitter
-from llama_index.ingestion import IngestionPipeline, IngestionCache
-from llama_index.schema import TransformComponent
+from llama_index.core import SimpleDirectoryReader
+from llama_index.core.extractors import SummaryExtractor,QuestionsAnsweredExtractor
+from llama_index.core.node_parser import TokenTextSplitter
+from llama_index.core.ingestion import IngestionPipeline, IngestionCache
+from llama_index.core.schema import TransformComponent
 
 class CustomTransformation(TransformComponent):
   def __call__(self, nodes, **kwargs):
@@ -38,4 +38,5 @@ pipeline = IngestionPipeline(
 nodes = pipeline.run(documents=documents, show_progress=True)
 pipeline.cache.persist("./ingestion_cache.json")
 
+print("All documents loaded")
 

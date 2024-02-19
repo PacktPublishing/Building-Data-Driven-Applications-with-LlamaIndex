@@ -1,5 +1,5 @@
-from llama_index.postprocessor import MetadataReplacementPostProcessor
-from llama_index.schema import TextNode, NodeWithScore
+from llama_index.core.postprocessor import MetadataReplacementPostProcessor
+from llama_index.core.schema import TextNode, NodeWithScore
 
 nodes = [
     TextNode(

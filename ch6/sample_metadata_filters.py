@@ -1,6 +1,6 @@
-from llama_index.vector_stores.types import MetadataFilter, MetadataFilters
-from llama_index import VectorStoreIndex
-from llama_index.schema import TextNode
+from llama_index.core.vector_stores import MetadataFilter, MetadataFilters
+from llama_index.core import VectorStoreIndex
+from llama_index.core.schema import TextNode
 user_departments = {"Alice": "Security", "Bob": "IT"}
 
 nodes = [

@@ -1,4 +1,10 @@
-from llama_index import SimpleWebPageReader
+from llama_index.readers.web import SimpleWebPageReader
 
-urls = ["https://docs.llamaindex.ai/en/stable/getting_started/installation.html"]
+urls = ["https://docs.llamaindex.ai"]
 documents = SimpleWebPageReader().load_data(urls)
+
+for doc in documents:
+    print(doc.text)
+    
+    
+#de mentionat: pip install llama-index-readers-web si am schimbat outputul

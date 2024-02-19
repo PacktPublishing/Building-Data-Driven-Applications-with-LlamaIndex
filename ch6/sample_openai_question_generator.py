@@ -1,6 +1,6 @@
-from llama_index.question_gen.openai_generator import OpenAIQuestionGenerator
-from llama_index.tools import RetrieverTool, ToolMetadata
-from llama_index import VectorStoreIndex, SummaryIndex, SimpleDirectoryReader, QueryBundle
+from llama_index.question_gen.openai import OpenAIQuestionGenerator
+from llama_index.core.tools import RetrieverTool, ToolMetadata
+from llama_index.core import VectorStoreIndex, SummaryIndex, SimpleDirectoryReader, QueryBundle
 
 documents = SimpleDirectoryReader("files").load_data()
 vector_index = VectorStoreIndex.from_documents([documents[0]])

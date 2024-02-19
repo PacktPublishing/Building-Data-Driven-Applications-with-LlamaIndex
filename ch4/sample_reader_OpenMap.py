@@ -1,7 +1,6 @@
-from llama_index import download_loader
+from llama_index.readers.maps import OpenMap
 
-MapReader = download_loader("OpenMap")
-loader = MapReader()
+loader = OpenMap()
 documents = loader.load_data(
     localarea='Paris', 
     search_tag='tourism', 
@@ -9,3 +8,6 @@ documents = loader.load_data(
     local_area_buffer=2000, 
     tag_values=['museum']
 )
+print(documents)
+    
+#de mentionat: pip install llama-index-readers-maps

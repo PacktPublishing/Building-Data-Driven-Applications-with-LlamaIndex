@@ -1,8 +1,12 @@
-from llama_index import download_loader
-
-DatabaseReader = download_loader('DatabaseReader')
+from llama_index.readers.database import DatabaseReader
 reader = DatabaseReader(
-    uri="sqlite:///example.db"
+    uri="sqlite:///files/db/example.db"
 )
 query = "SELECT * FROM products"
 documents = reader.load_data(query=query)
+for doc in documents:
+    print(doc.text)
+
+
+# de mentionat pip install llama-index-readers-database
+# si ca am schimbat un pic outputul
