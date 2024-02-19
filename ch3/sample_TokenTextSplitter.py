@@ -2,7 +2,10 @@ from llama_index.core import Document
 from llama_index.core.node_parser import TokenTextSplitter
 
 doc = Document( 
-    text="This is sentence 1. This is sentence 2. Sentence 3 here.",
+    text=(
+    "This is sentence 1. This is sentence 2. "
+    "Sentence 3 here."
+    ),
     metadata={"author": "John Smith"}
 )  
 splitter = TokenTextSplitter( 
