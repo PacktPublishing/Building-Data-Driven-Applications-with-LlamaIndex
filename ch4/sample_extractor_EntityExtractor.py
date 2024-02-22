@@ -14,9 +14,3 @@ entity_extractor = EntityExtractor(
 metadata_list = entity_extractor.extract(nodes)
 
 print(metadata_list)
-
-# de mentionat ca necesita torch:
-# - daca exista CUDA instalat, atunci torch se instaleaza cu: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-# - daca nu exista CUDA, atunci torch se instaleaza cu: pip install torch torchvision torchaudio
-# in functie de cuda sau , trebuie modificat parametrul device cuda/cpu
-# de mentionat ca necesita span_marker: pip install span-marker

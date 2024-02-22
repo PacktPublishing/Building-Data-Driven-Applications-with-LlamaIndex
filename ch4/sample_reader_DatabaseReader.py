@@ -7,6 +7,3 @@ documents = reader.load_data(query=query)
 for doc in documents:
     print(doc.text)
 
-
-# de mentionat pip install llama-index-readers-database
-# si ca am schimbat un pic outputul

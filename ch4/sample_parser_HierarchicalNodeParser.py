@@ -15,4 +15,3 @@ nodes = hierarchical_parser.get_nodes_from_documents(document)
 for node in nodes:
     print(f"Metadata: {node.metadata} \nText: {node.text}")
     
-#am modificat chunk_sizes si am pus chunk_overlap pe 0

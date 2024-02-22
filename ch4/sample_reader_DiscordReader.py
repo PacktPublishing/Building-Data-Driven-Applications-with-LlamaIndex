@@ -4,5 +4,3 @@ channel_ids = [1234567890]
 reader = DiscordReader(discord_token=discord_token)
 documents = reader.load_data(channel_ids=channel_ids)
 
-# de mentionat: pip install llama-index-readers-discord
-# de mentionat: pip install discord

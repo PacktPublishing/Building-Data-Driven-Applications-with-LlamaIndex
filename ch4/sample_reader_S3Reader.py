@@ -9,4 +9,4 @@ loader = S3Reader(
 documents = loader.load_data()
 print(documents)
 
-# de mentionat : pip install llama-index-readers-s3
+

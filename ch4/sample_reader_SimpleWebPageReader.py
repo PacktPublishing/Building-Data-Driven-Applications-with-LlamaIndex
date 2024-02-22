@@ -5,6 +5,3 @@ documents = SimpleWebPageReader().load_data(urls)
 
 for doc in documents:
     print(doc.text)
-    
-    
-#de mentionat: pip install llama-index-readers-web si am schimbat outputul

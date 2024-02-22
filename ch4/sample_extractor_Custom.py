@@ -21,7 +21,3 @@ nodes = parser.get_nodes_from_documents(documents)
 
 extractor = CustomExtractor()
 print(extractor.extract(nodes))
-
-#make sure to mention the necessary installation: pip install llama-index-readers-file
-#make sure that List and Dict imports are mentioned in the text
-#make sure to explain the function of this extractor example (what it does)

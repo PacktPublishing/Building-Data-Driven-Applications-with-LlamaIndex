@@ -18,6 +18,3 @@ print('<p> elements:')
 for node in nodes:
     if node.metadata['tag']=='p':
         print(node.text)
-        
-        
-# am modificat un pic si fisierul sursa (mai simplu) si display-ul din exemplu

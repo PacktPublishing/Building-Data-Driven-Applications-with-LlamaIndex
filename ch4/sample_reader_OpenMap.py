@@ -9,5 +9,3 @@ documents = loader.load_data(
     tag_values=['museum']
 )
 print(documents)
-    
-#de mentionat: pip install llama-index-readers-maps

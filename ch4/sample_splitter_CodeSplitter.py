@@ -15,8 +15,3 @@ nodes = code_splitter.get_nodes_from_documents(document)
 
 for node in nodes:
     print(f"Metadata {node.metadata} \nText: {node.text}\n")
-
-
-#de mentionat pip install tree_sitter
-#de mentionat pip install tree_sitter_languages
-# am umblat la parametrii

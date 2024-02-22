@@ -11,7 +11,3 @@ nodes = parser.get_nodes_from_documents(document)
 
 for node in nodes:
     print(f"Metadata {node.metadata} \nText: {node.text}")
-
-
-
-# trebuie mentionat requirementul de instalat langchain

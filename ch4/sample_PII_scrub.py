@@ -17,5 +17,3 @@ clean_nodes = processor.postprocess_nodes(
 
 print(clean_nodes[0].node.get_text())
 
-
-# de mentionat ca se instaleaza: pip install llama-index-llms-huggingface si ca va downloada ceva la prima rulare

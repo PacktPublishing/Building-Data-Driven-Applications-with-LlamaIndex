@@ -15,6 +15,3 @@ nodes = splitter.get_nodes_from_documents(document)
 
 for node in nodes:
     print(f"Metadata {node.metadata} \nText: {node.text}\n")
-
-
-#am umblat la parametrii
