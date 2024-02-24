@@ -1,15 +1,15 @@
-from pydantic import BaseModel
-from typing import List
 from langchain.output_parsers import StructuredOutputParser, ResponseSchema
 from llama_index.core.output_parsers import LangchainOutputParser
-from llama_index.core import VectorStoreIndex
 from llama_index.llms.openai import OpenAI
-from llama_index.core.data_structs import Node
+from llama_index.core.schema import TextNode
+from llama_index.core import VectorStoreIndex
+from pydantic import BaseModel
+from typing import List
 
 nodes = [
-    Node(
+    TextNode(
         text="Roses have vibrant colors and smell nice."),
-    Node(
+    TextNode(
         text="Oak trees are tall and have green leaves."),
 ]
 
@@ -40,6 +40,3 @@ response = query_engine.query(
     "Are oak trees small? yes or no",
 )
 print(response)
-
-
-#am eliminat ServiceContext si am inlocuit cu llm in quer_engine

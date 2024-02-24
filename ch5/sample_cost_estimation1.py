@@ -17,9 +17,8 @@ documents = SimpleDirectoryReader("cost_prediction_samples").load_data()
 index = TreeIndex.from_documents(
     documents=documents,
     num_children=2,
-    llm=llm, 
     show_progress=True)
+
 print("Total LLM Token Count:", token_counter.total_llm_token_count)
 
 
-#am migrat pe Settings

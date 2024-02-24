@@ -31,5 +31,3 @@ index = VectorStoreIndex.from_vector_store(
 )
 '''
 
-
-# de mentionat: pip install llama-index-vector-stores-chroma

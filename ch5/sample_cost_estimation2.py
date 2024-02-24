@@ -25,4 +25,3 @@ response = query_engine.query("What's the cat's name?")
 print("Query LLM Token Count:", token_counter.total_llm_token_count)
 print("Query Embedding Token Count:",token_counter.total_embedding_token_count)
 
-#am migrat pe Settings

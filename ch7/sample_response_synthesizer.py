@@ -1,11 +1,16 @@
-from llama_index.core.data_structs import Node
-from llama_index.core.schema import NodeWithScore
+from llama_index.core.schema import TextNode, NodeWithScore
 from llama_index.core import get_response_synthesizer
 
 nodes = [ 
-    Node(text="The town square clock was built in 1895"), 
-    Node(text="A turquoise parrot lives in the Amazon"), 
-    Node(text="A rare orchid blooms only at midnight"), 
+    TextNode(text=
+        "The town square clock was built in 1895"
+    ), 
+    TextNode(text=
+        "A turquoise parrot lives in the Amazon"
+    ), 
+    TextNode(text=
+        "A rare orchid blooms only at midnight"
+    ), 
 ] 
 
 node_with_score_list = [NodeWithScore(node=node) for node in nodes] 

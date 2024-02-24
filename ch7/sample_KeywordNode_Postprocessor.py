@@ -26,5 +26,3 @@ print('Remaining nodes:')
 for node_with_score in remaining_nodes:
     node = node_with_score.node
     print(f"Text: {node.text}")
-
-#de mentionat: pip install spacy

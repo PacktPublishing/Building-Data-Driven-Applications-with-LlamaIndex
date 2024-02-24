@@ -7,5 +7,3 @@ embeddings = embedding_model.get_text_embedding(
 )
 print(embeddings[:15]) 
 
-
-#de mentionat: pip install llama-index-embeddings-huggingface

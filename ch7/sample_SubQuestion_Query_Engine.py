@@ -2,8 +2,8 @@ from llama_index.core.tools import QueryEngineTool
 from llama_index.core.query_engine import RouterQueryEngine
 from llama_index.core.query_engine import SubQuestionQueryEngine
 from llama_index.core.selectors import PydanticMultiSelector
-from llama_index.core import SummaryIndex, SimpleDirectoryReader
 from llama_index.core.extractors import TitleExtractor
+from llama_index.core import SummaryIndex, SimpleDirectoryReader
 
 documents = SimpleDirectoryReader("files/sample").load_data()
 title_extractor = TitleExtractor()
@@ -42,5 +42,3 @@ response = qe.query(
 )
 print(response)
 
-
-# am eliminat ServiceContext si toata partea cu debug. de refrazat si explicat cum genereaza raspunsul final

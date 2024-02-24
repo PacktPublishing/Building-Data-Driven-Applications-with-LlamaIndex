@@ -8,6 +8,3 @@ retriever = SummaryIndexEmbeddingRetriever(
 )
 result = retriever.retrieve("Tell me about ancient Rome")
 print(result[0].text)
-
-
-#am adaugat un output

@@ -12,5 +12,3 @@ decision = selector.select(
 ).selections[0]
 print(decision.index+1)
 print(decision.reason)
-
-#am incrementat index cu 1 si am schimbat intrebarea

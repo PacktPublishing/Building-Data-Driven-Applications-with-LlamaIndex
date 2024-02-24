@@ -21,5 +21,3 @@ for node_with_score in response:
     print('Text:'+node_with_score.node.text)
     print('Score: '+str(node_with_score.score))
 
-
-#am modificat putin query-ul
