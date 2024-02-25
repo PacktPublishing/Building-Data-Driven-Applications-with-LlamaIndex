@@ -1,6 +1,5 @@
 from llama_index.agent.openai import OpenAIAgent
 from llama_index.core.tools.ondemand_loader_tool import OnDemandLoaderTool
-
 from llama_index.readers.wikipedia import WikipediaReader
 
 tool = OnDemandLoaderTool.from_defaults(
