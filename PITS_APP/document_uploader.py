@@ -1,11 +1,11 @@
 #ingest uploaded documents
 from global_settings import STORAGE_PATH, INDEX_STORAGE, CACHE_FILE
 from logging_functions import log_action
-from llama_index import SimpleDirectoryReader, VectorStoreIndex
-from llama_index.ingestion import IngestionPipeline, IngestionCache
-from llama_index.text_splitter import TokenTextSplitter
-from llama_index.extractors import SummaryExtractor
-from llama_index.embeddings import OpenAIEmbedding
+from llama_index.core import SimpleDirectoryReader, VectorStoreIndex
+from llama_index.core.ingestion import IngestionPipeline, IngestionCache
+from llama_index.core.node_parser import TokenTextSplitter
+from llama_index.core.extractors import SummaryExtractor
+from llama_index.embeddings.openai import OpenAIEmbedding
 
 def ingest_documents():
     documents = SimpleDirectoryReader(

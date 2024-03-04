@@ -1,5 +1,5 @@
-from llama_index import VectorStoreIndex, TreeIndex, load_index_from_storage
-from llama_index.storage import StorageContext 
+from llama_index.core import VectorStoreIndex, TreeIndex, load_index_from_storage
+from llama_index.core import StorageContext
 from global_settings import INDEX_STORAGE
 from document_uploader import ingest_documents
 

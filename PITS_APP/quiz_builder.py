@@ -1,10 +1,10 @@
 # quiz_builder.py
 # prepares quizz questions based on the uploaded files
 
-from llama_index import load_index_from_storage
-from llama_index.storage.storage_context import StorageContext
+from llama_index.core import load_index_from_storage, StorageContext
+from llama_index.program.evaporate.df import DFRowsProgram
+from llama_index.program.openai import OpenAIPydanticProgram
 from global_settings import INDEX_STORAGE, QUIZ_SIZE, QUIZ_FILE
-from llama_index.program import OpenAIPydanticProgram, DFRowsProgram
 import pandas as pd
 
 def build_quiz(topic):

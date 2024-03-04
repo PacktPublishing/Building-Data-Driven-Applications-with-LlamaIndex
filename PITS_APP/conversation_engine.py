@@ -1,13 +1,15 @@
+#Conversation storgae currently not working
+
 import os
 import json
 import streamlit as st
 from openai import OpenAI
-from llama_index import load_index_from_storage
-from llama_index.storage import StorageContext
-from llama_index.memory import ChatMemoryBuffer
-from llama_index.tools import QueryEngineTool, ToolMetadata
-from llama_index.agent import OpenAIAgent
-from llama_index.storage.chat_store import SimpleChatStore
+from llama_index.core import load_index_from_storage
+from llama_index.core import StorageContext
+from llama_index.core.memory import ChatMemoryBuffer
+from llama_index.core.tools import QueryEngineTool, ToolMetadata
+from llama_index.agent.openai import OpenAIAgent
+from llama_index.core.storage.chat_store import SimpleChatStore
 from global_settings import INDEX_STORAGE, CONVERSATION_FILE
 
 def load_chat_store():
@@ -75,4 +77,4 @@ def chat_interface(agent, chat_store, container):
             response = str(agent.chat(prompt))
             with st.chat_message("assistant"):
                 st.markdown(response)
-        chat_store.persist(CONVERSATION_FILE)
+        #chat_store.persist(CONVERSATION_FILE)
