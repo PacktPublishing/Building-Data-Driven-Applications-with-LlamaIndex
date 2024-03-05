@@ -1,4 +1,4 @@
-#Conversation storgae currently not working
+#Conversation storage currently not working
 
 import os
 import json

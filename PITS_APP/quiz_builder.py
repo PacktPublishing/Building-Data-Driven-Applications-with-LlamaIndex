@@ -1,4 +1,3 @@
-# quiz_builder.py
 # prepares quizz questions based on the uploaded files
 
 from llama_index.core import load_index_from_storage, StorageContext

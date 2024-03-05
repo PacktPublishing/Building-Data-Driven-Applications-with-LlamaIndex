@@ -1,0 +1,7 @@
+llama_index==0.10.15
+llama-index-program-evaporate==0.1.2
+openai==1.13.3
+pandas==1.5.2
+PyYAML==6.0.1
+
+

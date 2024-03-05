@@ -34,6 +34,3 @@ def show_quiz(topic):
             st.write(f"Your score is: {score}/{max_score}")
             st.write(f"Your level of knowledge: {level}")
             return level, score
-
-if __name__ == "__main__":
-    show_quiz('gardening')

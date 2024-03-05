@@ -32,7 +32,3 @@ def show_training_UI(user_name, study_subject):
         agent = initialize_chatbot(user_name, study_subject, chat_store, container, context)
         chat_interface(agent, chat_store, container)
         
-if __name__ == "__main__":
-    user_name = "Andrei"  
-    study_subject = "ITIL Foundation" 
-    show_training_UI(user_name, study_subject)

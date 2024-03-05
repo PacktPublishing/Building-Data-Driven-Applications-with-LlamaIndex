@@ -1,5 +1,3 @@
-#TO DO:
-# - de bagat totul intr-o functie, adaugat spinnere si importat in user_onboarding
 # pip install llama-index-program-evaporate
 
 from llama_index.core import TreeIndex, load_index_from_storage
@@ -91,6 +89,5 @@ def generate_slides(topic):
     slide_deck = SlideDeck(topic, slides)
     slide_deck.save_to_file(SLIDES_FILE)
     
-if __name__ == "__main__":
-    generate_slides('ITIL Foundation')
+
     
