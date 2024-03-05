@@ -4,11 +4,17 @@ from logging_functions import reset_log
 from quiz_UI import show_quiz
 from training_UI import show_training_UI
 import streamlit as st
+import os
 
 def main():
     st.set_page_config(layout="wide")
     st.sidebar.title('P.I.T.S.')
     st.sidebar.markdown('### Your Personalized Intelligent Tutoring System')
+
+    if 'OPENAI_API_KEY' not in st.session_state or not st.session_state['OPENAI_API_KEY']:
+        api_key = st.text_input("Enter your OpenAI API Key (or leave blank if running locally): ")
+        st.session_state['OPENAI_API_KEY'] = api_key
+        os.environ['OPENAI_API_KEY'] = api_key
 
     # Check if the user is returning and has opted to take a quiz
     if 'show_quiz' in st.session_state and st.session_state['show_quiz']:
