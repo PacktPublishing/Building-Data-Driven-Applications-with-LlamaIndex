@@ -70,7 +70,7 @@ jsonpointer==2.4
 jsonschema==4.21.1
 jsonschema-specifications==2023.12.1
 kubernetes==29.0.0
-langchain==0.1.9
+langchain==0.1.11
 langchain-community==0.0.24
 langchain-core==0.1.28
 langchain-openai==0.0.8
