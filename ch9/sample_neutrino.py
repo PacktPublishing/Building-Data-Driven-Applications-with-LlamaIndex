@@ -2,7 +2,7 @@ from llama_index.core.llms import ChatMessage
 from llama_index.llms.neutrino import Neutrino
 
 llm = Neutrino(
-    api_key="<your-Neutrino_API_key>"
+    api_key="<your-Neutrino_API_key>",
     router="<Neutrino-router_ID>"
 )
 
