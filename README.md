@@ -1,4 +1,4 @@
-# Build Data-Driven LLM Applications with LlamaIndex
+# Building Data-Driven Applications with LlamaIndex
 ### A Practical Guide to LlamaIndex for Python Developers
 
 ## Project Description
