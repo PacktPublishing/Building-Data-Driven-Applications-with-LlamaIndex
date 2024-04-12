@@ -58,7 +58,7 @@ httptools==0.6.1
 httpx==0.25.2
 huggingface-hub==0.20.3
 humanfriendly==10.0
-idna==3.6
+idna==3.7
 importlib-metadata==6.11.0
 importlib_resources==6.1.2
 iniconfig==2.0.0
