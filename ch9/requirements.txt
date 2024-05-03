@@ -221,7 +221,7 @@ torch==2.2.1+cu121
 torchaudio==2.2.1+cu121
 torchvision==0.17.1+cu121
 tornado==6.4
-tqdm==4.66.2
+tqdm==4.66.3
 transformers==4.38.1
 trio==0.24.0
 trio-websocket==0.11.1
