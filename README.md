@@ -3,7 +3,7 @@
 
 This is the code repository for [Building Data-Driven Applications with LlamaIndex](https://www.packtpub.com/product/building-data-driven-applications-with-llamaindex/9781835089507), published by Packt.
 
-**Building Data-Driven Applications with LlamaIndex**
+**A practical guide to retrieval augmented generation (RAG) for Enhancing LLM Applications**
 
 ## What is this book about?
 Generative AI, such as Large Language Models (LLMs) possess immense potential. These models simplify problems but have limitations, including contextual memory constraints, prompt size issues, real-time data gaps, and occasional "hallucinations."
