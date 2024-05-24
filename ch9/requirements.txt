@@ -76,7 +76,7 @@ langchain-core==0.1.28
 langchain-openai==0.0.8
 langsmith==0.1.10
 llama-hub==0.0.79.post1
-llama-index==0.10.3
+llama-index==0.10.13
 llama-index-agent-openai==0.1.5
 llama-index-callbacks-arize-phoenix==0.1.4
 llama-index-callbacks-deepeval==0.1.2
