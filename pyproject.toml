@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "building-data-driven-applications-with-llamaindex"
+version = "0.1.0"
+description = ""
+authors = ["eric-epsilla <eric@epsilla.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+llama-index = "0.11.20"
+setuptools = "^75.2.0"
+distribute = "^0.7.3"
+llama-index-readers-wikipedia = "^0.2.0"
+wikipedia = "^1.4.0"
+tree-sitter = "^0.23.2"
+tree-sitter-languages = "^1.10.2"
+tree-sitter-python = "^0.23.2"
+html2text = "^2024.2.26"
+llama-index-readers-s3 = "^0.2.0"
+llama-index-readers-maps = "^0.2.0"
+llama-index-readers-github = "^0.2.0"
+llama-index-readers-discord = "^0.2.1"
+llama-index-readers-database = "^0.2.0"
+langchain = "^0.3.4"
+llama-index-vector-stores-chroma = "^0.2.1"
+llama-index-retrievers-bm25 = "^0.4.0"
+llama-index-tools-database = "^0.2.0"
+llama-index-packs-agents-llm-compiler = "^0.2.0"
+streamlit = "^1.39.0"
+llama-index-program-evaporate = "^0.2.0"
+spacy = "^3.8.7"
+arize-phoenix = "^11.21.0"
+arize-phoenix-otel = "^0.12.1"
+pandas = "^2.3.1"
+pyyaml = "^6.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
