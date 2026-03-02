@@ -1,3 +1,5 @@
+<p align='center'><a href='https://www.eventbrite.com/e/ship-production-pytorch-system-in-a-day-train-optimize-deploy-workshop-tickets-1983348934052?aff=GitHub'><img src='https://static.packt-cdn.com/assets/images/packt+events/workshop_ashish_github.png'/></a></p>
+
 # Building Data-Driven Applications with LlamaIndex
 <a href="https://www.packtpub.com/product/building-data-driven-applications-with-llamaindex/9781835089507"><img src="https://m.media-amazon.com/images/I/71Aly61qDsL._SL1360_.jpg" alt="Building Data-Driven Applications with LlamaIndex" height="256px" align="right"></a>
 
