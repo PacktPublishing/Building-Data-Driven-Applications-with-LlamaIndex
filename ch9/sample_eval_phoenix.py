@@ -23,7 +23,7 @@ from phoenix.session.evaluation import (
     get_retrieved_documents
 )
 from phoenix.trace import DocumentEvaluations, SpanEvaluations
-from phoenix.experimental.evals import (
+from phoenix.evals import (
     HallucinationEvaluator,
     QAEvaluator,
     RelevanceEvaluator,
